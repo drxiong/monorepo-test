@@ -1,0 +1,12 @@
+<h1>Demo</h1>
+<div id="app"></div>
+<script type="module">
+    import { createApp } from "vue/dist/vue.esm-bundler.js"
+    import SmartyUI from "xy-ui-vite"
+    import 'xy-ui-vite/dist/style.css'
+    console.log(SmartyUI)
+    createApp({
+        template: `
+        <XButton color="red">普通按钮</XButton>
+    `}).use(SmartyUI).mount('#app')
+</script>
